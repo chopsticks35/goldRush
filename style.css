@@ -5,11 +5,9 @@ box-styling: border-box;
 }
 
 .map {
-/*
     background-image: url("topo-co.jpg");
 	background-size: cover;
     background-position: center;
-*/
 	width: 100vw;	
 	height: 100vh;
 	position: relative;

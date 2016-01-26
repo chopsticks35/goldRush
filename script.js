@@ -4,7 +4,6 @@ angular.module('myApp')
     .controller('myController', ['$scope', function($scope){
         
 			$scope.coordinates = [];
-            $scope.show = false;
 			$scope.doClick = function($event) {
                 
 //              this logs coordiantes only
@@ -15,13 +14,13 @@ angular.module('myApp')
 //				console.log($scope.coordinates);
                 
 //              .spot with client or pageX top left
-                $scope.show = true;
+               
                 $scope.spot = {  
                 'top': $event.pageY + "px",
 				'left': $event.pageX + "px",
 			     }
                 $scope.coordinates.push($scope.spot);
-                
+            
                 console.log($scope.coordinates);
                 console.log($event);
                 console.log($scope.spot);
