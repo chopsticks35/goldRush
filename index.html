@@ -11,6 +11,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body ng-controller="myController">
+        <div class="textBox" ng-show="showPop"><textarea name="popUp" class="textInBox" rows="8" cols="40" ng-model="popForm"></textarea>
+         <button ng-click="popUp($event)">{{button}}</button>
+        </div>
+        
 		<div ng-click="doClick($event)" class="map">
 <!--had originally made url background image but changed to direct image source-->
 <!--			<img class="map" src="topo-co.jpg"> changing to background image in css url-->

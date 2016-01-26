@@ -14,7 +14,12 @@ angular.module('myApp')
 //				console.log($scope.coordinates);
                 
 //              .spot with client or pageX top left
-               
+                $scope.popUp = false;
+		        $scope.button = "Mark Comments";
+		        $scope.showPop = function($event) {
+			    $scope.popUp = !$scope.popUp
+		      }
+                
                 $scope.spot = {  
                 'top': $event.pageY + "px",
 				'left': $event.pageX + "px",
@@ -24,6 +29,7 @@ angular.module('myApp')
                 console.log($scope.coordinates);
                 console.log($event);
                 console.log($scope.spot);
+            
                 
                 $scope.removeIt = function($index){
                 $scope.coordinates.splice($index, 1);

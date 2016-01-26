@@ -20,3 +20,10 @@ box-styling: border-box;
     margin-left: -6px;
     margin-top: -1.5px;
 }
+
+.textBox {
+    position: absolute;
+    margin: auto;
+    width: 600px;
+    height: 200px;
+}
